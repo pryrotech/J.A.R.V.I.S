@@ -12,7 +12,7 @@ with sr.Microphone() as source:
 try:
     print("Sphinx thinks you said " + r.recognize_sphinx(audio))
     if(r.recognize_sphinx(audio) == str("hey jarvis")):
-       print("Hi colbs")
+       print("Hi colby")
 except sr.UnknownValueError:
     print("Sphinx could not understand audio")
 except sr.RequestError as e:
