@@ -2,9 +2,14 @@
 #   JARVIS Main Control by Colby Pryor  #
 #########################################
 import speech_recognition as sr
+from meross_iot.manager import MerossManager
+from meross_iot.cloud.devices.power_plugs import GenericPlug
+from meross_iot.meross_event import MerossEventType
+from meross_iot.api import MerossHttpClient
 from gtts import gTTS
 import pygame
 import time
+import sys
 import os
 # obtain audio from the microphone
 r = sr.Recognizer()
